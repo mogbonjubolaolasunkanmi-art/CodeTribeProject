@@ -20,7 +20,7 @@ function Settings() {
   // =========================
   // SIDEBAR STATE
   // =========================
-  // <Sidebar />;
+
   const [activeTab, setActiveTab] = useState("Account");
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -178,6 +178,7 @@ function Settings() {
   const AccountSection = () => {
     return (
       <div className="settings-card">
+        {/* <Sidebar /> */}
         <h2>Account</h2>
 
         <div className="account-profile">
@@ -669,6 +670,13 @@ function Settings() {
 
   return (
     <div className={`settings-page ${theme === "Dark" ? "dark-mode" : ""}`}>
+      <button
+        className="mobile-menu-btn"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Open settings menu"
+      >
+        {menuOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
       {/* =========================
           HEADER
       ========================= */}

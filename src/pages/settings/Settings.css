@@ -85,13 +85,34 @@
 ========================= */
 
 .mobile-menu-btn {
-  display: none;
+  /* display: none;
 
   border: none;
   background: transparent;
   cursor: pointer;
 
-  color: #26332e;
+  color: #26332e; */
+  .mobile-menu-btn {
+    display: none;
+
+    border: none;
+    background: white;
+    cursor: pointer;
+
+    color: #26332e;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 8px;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 18px 0 0 4%;
+
+    box-shadow: 0 2px 8px rgba(20, 50, 40, 0.08);
+  }
 }
 
 /* =========================
@@ -624,6 +645,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 10;
+
+    margin: 15px 0 0 3%;
   }
 
   .header-profile {
@@ -651,7 +676,7 @@
 
     display: block;
 
-    margin: 25px auto;
+    margin: 25px auto 20px;
   }
 
   /* Mobile sidebar */

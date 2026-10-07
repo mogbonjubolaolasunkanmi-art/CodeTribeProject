@@ -134,7 +134,7 @@ function Sidebar() {
 
           {/* Calendar */}
           <div className="px-4 py-3 text-gray-600 transition-all duration-200 hover:bg-green-50 hover:text-green-600">
-            <Link to="/Calender" onClick={() => setIsOpen(false)}>
+            <Link to="/Calendar" onClick={() => setIsOpen(false)}>
               📅 Calendar
             </Link>
           </div>

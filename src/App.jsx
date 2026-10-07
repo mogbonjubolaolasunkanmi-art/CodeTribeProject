@@ -5,6 +5,7 @@ import Login from "./pages/login/Login";
 import Onboarding from "./pages/Onboarding";
 import Dashboard from "./pages/Dashboard";
 import MyHabits from "./pages/myhabits/MyHabits";
+import Calendar from "./pages/Calendar";
 import Progress from "./pages/Progress";
 import Settings from "./pages/settings/Settings";
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/Onboarding" element={<Onboarding />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/MyHabits" element={<MyHabits />} />
+        <Route path="/Calendar" element={<Calendar />} />
         <Route path="/Progress" element={<Progress />} />
         <Route path="/Settings" element={<Settings />} />
       </Routes>
